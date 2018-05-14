@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul class="log-info-list">
+            <li>
+                <div class="user-name">My user name</div>
+            </li>
+            <li><a href="#" class="log-out">Log out</a></li>
+            <li><span>Date:</span>
+                <time datetime="30-04-2018">30.04.2018</time>
+            </li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="shop-controller">
+            <div class="title-name">
+                <div class="block-name">shop</div>
+            </div>
+            <input type="text" name="" id="shop-search">
+            <label for="shop-search">Search shop</label>
+            <input type="checkbox" name="" id="top-shop">
+            <label for="top-shop">Show top Shop</label>
+            <input type="checkbox" name="" id="top-shop">
+            <label for="top-shop">Show Inactive Stores</label>
+            <input type="checkbox" name="" id="SortbyFrequency">
+            <label for="SortbyFrequency">Sort by Frequency</label>
+            <label class="category">Show partner Stores</label>
+            <select class="category">
+                <option value="option1">All</option>
+                <option value="option2">no partner</option>
+                <option value="option3">With partner</option>
+            </select>
+            <label class="category">Show Stores by Categories</label>
+            <select class="category">
+                <option value="option1">All</option>
+                <option value="option2">no partner</option>
+                <option value="option3">With partner</option>
+            </select>
+            <button class="add-store" id="add-store">Add new store</button>
+            <div class="pages-pagination"><a href="#">1</a><a href="#">2</a>..<a href="#">3</a><a href="#">4</a>
+                <input type="text">
+                <button>Go</button>
+            </div>
+        </div>
+        <table class="shops-content">
+            <tr>
+                <th> ID</th>
+                <th>Name </th>
+                <th>Screen </th>
+                <th>Date of Adding </th>
+                <th>Partner URL </th>
+                <th>Valid</th>
+                <th>Clicks</th>
+                <th>Assign</th>
+                <th>Last update</th>
+                <th>functions</th>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>Shop name</td>
+                <td>
+                    <div class="shop-img"> <img src="img/logo.gif" alt=""></div>
+                    <div class="links"><a href="#">@</a></div>
+                </td>
+                <td>02.05.2018</td>
+                <td>www.nike.com</td>
+                <td>1</td>
+                <td>1000</td>
+                <td>Anyone</td>
+                <td>02.05.2018</td>
+                <td>ТУТ БУДЕТ КНОПКИ ДЕЙСТВИЯ</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>Shop name</td>
+                <td>
+                    <div class="shop-img"> <img src="img/logo.gif" alt=""></div>
+                    <div class="links"><a href="#">@</a></div>
+                </td>
+                <td>02.05.2018</td>
+                <td>www.nike.com</td>
+                <td>1</td>
+                <td>1000</td>
+                <td>Anyone</td>
+                <td>02.05.2018</td>
+                <td>ТУТ БУДЕТ КНОПКИ ДЕЙСТВИЯ</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>Shop name</td>
+                <td>
+                    <div class="shop-img"> <img src="img/logo.gif" alt=""></div>
+                    <div class="links"><a href="#">@</a></div>
+                </td>
+                <td>02.05.2018</td>
+                <td>www.nike.com</td>
+                <td>1</td>
+                <td>1000</td>
+                <td>Anyone</td>
+                <td>02.05.2018</td>
+                <td>ТУТ БУДЕТ КНОПКИ ДЕЙСТВИЯ</td>
+            </tr>
+        </table>
+    </div>
+    <div class="add-shop-block" id="add-shop-block">
+        <div class="title-name">
+            <div class="block-name">shop</div>
+            <span class="closer"><i class="far fa-window-close"></i></span>
+        </div>
+        <div class="block-content clearfix">
+            <label>Name</label>
+            <input type="text">
+            <br>
+            <label>Description</label>
+            <textarea></textarea>
+            <br>
+            <label>Category</label>
+            <select class="category">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+                <option value="option4">option4</option>
+                <option value="option5">option5</option>
+            </select>
+            <div class="tags">
+                <label>Tags</label>
+                <div class="tags-table ">
+                    <div class="table-heading"><span>0</span><span>selected</span><a class="remove-btn" href="#">remove all</a></div>
+                    <div class="table-heading ">somthing <a href="#">add new tag</a></div>
+                    <div class="table-content">sadsad</div>
+                    <div class="table-content">
+                        <ul>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <label>Brands</label>
+                <div class="tags-table ">
+                    <div class="table-heading"><span>0</span><span>selected</span><a class="remove-btn" href="#">remove all</a></div>
+                    <div class="table-heading ">somthing <a href="#">add new brand</a></div>
+                    <div class="table-content">sadsad</div>
+                    <div class="table-content">
+                        <ul>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                            <li>option name <span class="add-position-btn">plus</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <label>URL</label>
+            <input type="text">
+            <label>Partner</label>
+            <input type="text">
+            <label>Frequency</label>
+            <input id="Frequency" type="number" min="1" max="30" value="1">
+            <label>add Photo</label>
+            <div class="shop-img-prewiev clearfix">
+                <form enctype="multipart/form-data" method="post">
+                    <div>
+                    </div>
+                    <div style="float: left;">
+                        <img id="img-preview" src="img/img-prewiev.png" />
+                        <br />
+                        <a href="#" id="reset-img-preview">удалить изображения</a>
+                    </div>
+                    <div class="download-buttons ">
+                        <input type="file" id="img" multiple accept="image/*" name="img" />
+                        <input type="reset" value="Отмена" />
+                        <input type="submit" value="Загрузить" />
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="add-shop-btn">ADD SHOP</a>
+        </div>
+        <script src="js/shop.js"></script>
+</body>
+
+</html>

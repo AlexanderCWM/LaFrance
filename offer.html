@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul class="log-info-list">
+            <li>
+                <div class="user-name">My user name</div>
+            </li>
+            <li><a href="log-out">Log out</a></li>
+            <li><span>Date:</span>
+                <time datetime="30-04-2018">30.04.2018</time>
+            </li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="shop-controller">
+            <div class="title-name">
+                <span>Offer</span>
+            </div>
+            <div class="offers-header">
+                <div class="search-block">
+                    <input type="text" name="" id="shop-search">
+                    <label for="shop-search">Search shop</label>
+                    <select name="select-shop" id="">
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                        <option value="">select shop</option>
+                    </select>
+                    <input type="text" name="" id="shop-search">
+                    <label for="shop-search">General Search</label>
+                    <input type="text" name="">
+                    <label>category</label>
+                    <a href="#" class="add-btn">Add offer</a>
+                </div>
+                <div class="pagination-block">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>...
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <input type="text" name="pagination-block" id="pagination-input">
+                    <button>GO</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <table>
+                <caption>Personal pronouns</caption>
+                <tr>
+                    <th>ID</th>
+                    <th>Code</th>
+                    <th>Shop</th>
+                    <th>Type</th>
+                    <th>Duplicate</th>
+                    <th>Creator</th>
+                    <th>Description</th>
+                    <th>Click URl</th>
+                    <th>Aff</th>
+                    <th>Added/Update</th>
+                    <th>Expires</th>
+                    <th>Start Date</th>
+                    <th>Buttons</th>
+                </tr>
+                <tr>
+                    <td>234543</td>
+                    <td>Code</td>
+                    <td>Nike</td>
+                    <td>Sale 50%</td>
+                    <td>No</td>
+                    <td>Mike</td>
+                    <td>Description of this offer</td>
+                    <td>www.nike.com</td>
+                    <td>awin</td>
+                    <td>04.05.2018/04.05.2018</td>
+                    <td>04.05.2018</td>
+                    <td>04.05.2018</td>
+                    <td>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>234543</td>
+                    <td>Code</td>
+                    <td>Nike</td>
+                    <td>Sale 50%</td>
+                    <td>No</td>
+                    <td>Mike</td>
+                    <td>Description of this offer</td>
+                    <td>www.nike.com</td>
+                    <td>awin</td>
+                    <td>04.05.2018/04.05.2018</td>
+                    <td>04.05.2018</td>
+                    <td>04.05.2018</td>
+                    <td>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                        <a href="#">A</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="substrate">
+            <div class="wrapper">
+                <div class="add-offer-block">
+                    <div class="add-offer-block-header">
+                        <div class="add-offer-block-header-title"> add offer <span class="closer"><i class="fas fa-window-close"></i></span></div>
+                        <label for="add-offer-block-search">Search Store</label>
+                        <input type="text" name="" id="add-offer-block-search">
+                        <ul class="add-offer-block-tabs">
+                            <li><a href="#" class=" tab ">Code</a></li>
+                            <li><a href="#" class=" tab ">Deal</a></li>
+                        </ul>
+                    </div>
+                    <div class="add-offer-block-content">
+                        <div class="tab-item">
+                            <div class="code-block">
+                                <label>Code</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="source-block">
+                                <label for="">Source</label>
+                                <input type="radio" name="source-group" id="email">
+                                <label for="email">Email</label>
+                                <input type="radio" name="source-group" id="feed">
+                                <label for="feed">Feed</label>
+                                <input type="radio" name="source-group" id="competition">
+                                <label for="competition">Competition</label>
+                                <input type="radio" name="source-group" id="off-site">
+                                <label for="off-site">Off-site</label>
+                                <input type="radio" name="source-group" id="other">
+                                <label for="other">Other</label>
+                            </div>
+                            <div class="click-url-block">
+                                <span>Click URL</span>
+                                <textarea cols="100" rows="3"></textarea>
+                            </div>
+                            <div class="type-block">
+                                <label for="">Type</label>
+                                <input type="radio" name="type-group" id="discount">
+                                <label for="discount">Discount-code</label>
+                                <input type="radio" name="type-group" id="gift">
+                                <label for="gift">Gift</label>
+                                <input type="radio" name="type-group" id="shipping">
+                                <label for="shipping">Shipping Code</label>
+                            </div>
+                            <div class="promos-block">
+                                <label>Promo</label>
+                                <select name="" id="">
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                </select>
+                                <a href="#" class="add-special-offer">+Добавить еще промо акцию</a>
+                            </div>
+                            <div class="description-block">
+                                <span>Description</span>
+                                <textarea name="" id="" cols="70" rows="3"></textarea>
+                                <a href="#" class="add-btn">Add Brands</a>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">add full description</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">add price size</label>
+                                    </li>
+                                </ul>
+                                <div class="expires-block">
+                                    <label>Expires</label>
+                                    <input type="text" name="" id="">
+                                    <ul>
+                                        <li><a href="#" class="expires-link active">Active</a></li>
+                                        <li><a href="#" class="expires-link">Show to main page</a></li>
+                                        <li><a href="#" class="expires-link">Save as archive</a></li>
+                                        <li><a href="#" class="expires-link">Checked</a></li>
+                                        <li><a href="#" class="expires-link">Editor Choice</a></li>
+                                        <li><a href="#" class="expires-link">Low priority</a></li>
+                                    </ul>
+                                </div>
+                                <div class="add-offer append">
+                                    <a href="#" class="add-btn">Add Offer</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="code-block">
+                                <label>Deal</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="source-block">
+                                <label for="">Source</label>
+                                <input type="radio" name="source-group" id="email">
+                                <label for="email">Email</label>
+                                <input type="radio" name="source-group" id="feed">
+                                <label for="feed">Feed</label>
+                                <input type="radio" name="source-group" id="competition">
+                                <label for="competition">Competition</label>
+                                <input type="radio" name="source-group" id="off-site">
+                                <label for="off-site">Off-site</label>
+                                <input type="radio" name="source-group" id="other">
+                                <label for="other">Other</label>
+                            </div>
+                            <div class="click-url-block">
+                                <span>Click URL</span>
+                                <textarea cols="100" rows="3"></textarea>
+                            </div>
+                            <div class="type-block">
+                                <label for="">Type</label>
+                                <input type="radio" name="type-group" id="discount">
+                                <label for="discount">Discount-code</label>
+                                <input type="radio" name="type-group" id="gift">
+                                <label for="gift">Gift</label>
+                                <input type="radio" name="type-group" id="shipping">
+                                <label for="shipping">Shipping Code</label>
+                            </div>
+                            <div class="promos-block">
+                                <label>Promo</label>
+                                <select name="" id="">
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                    <option value="promo">promo</option>
+                                </select>
+                                <a href="#" class="add-special-offer">+Добавить еще промо акцию</a>
+                            </div>
+                            <div class="description-block">
+                                <span>Description</span>
+                                <textarea name="" id="" cols="70" rows="3"></textarea>
+                                <a href="#" class="add-btn">Add Brands</a>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">add full description</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">add price size</label>
+                                    </li>
+                                </ul>
+                                <div class="expires-block">
+                                    <label>Expires</label>
+                                    <input type="text" name="" id="">
+                                    <ul>
+                                        <li><a href="#" class="expires-link active">Active</a></li>
+                                        <li><a href="#" class="expires-link">Show to main page</a></li>
+                                        <li><a href="#" class="expires-link">Save as archive</a></li>
+                                        <li><a href="#" class="expires-link">Checked</a></li>
+                                        <li><a href="#" class="expires-link">Editor Choice</a></li>
+                                        <li><a href="#" class="expires-link">Low priority</a></li>
+                                    </ul>
+                                </div>
+                                <div class="add-offer append">
+                                    <a href="#" class="add-btn">Add Offer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/shop.js"></script>
+</body>
+
+</html>
