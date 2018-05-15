@@ -76,11 +76,24 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    var panelTab = $('.navigation-list-item');
+    var panelTab = $('.tab-name');
+    var closeBtn = $('.close-panel-btn');
+    var openAdminBtn = $('.open-panel-btn')
+    console.log(panelTab)
+    panelTab.on('click', function() {
+        panelTab.parent().children('ul').slideUp();
+        if ($(this).parent().children('ul').is(':hidden'))
+            $(this).parent().children('ul').slideDown();
 
-    $(this).on('click', function() {
-        panelTab.children('ul.tables-list').slideUp();
-        $(this).children('ul.tables-list').slideDown();
     })
 
-})
+    closeBtn.on('click', function() {
+        $('.admin-menu').animate({ left: "-350px" }, 500);
+        openAdminBtn.show();
+    })
+
+    openAdminBtn.on('click', function() {
+        $('.admin-menu').animate({ left: "0" }, 500);
+        openAdminBtn.hide();
+    })
+});
